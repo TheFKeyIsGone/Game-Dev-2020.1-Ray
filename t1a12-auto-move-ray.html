@@ -1,1 +1,17 @@
 <script>
+ let myInterval
+</script>
+
+<h1 align=center>t1a12-auto-move-ray</h1>
+
+Make all directions in a tablke replace fred witrh an image<br>
+
+<div id="myDiv01" style="position:absolute; left:200; top:10; " >Fred</div>
+
+<input type=button value="go right auto" onclick="{
+ clearInterval(myInterval)
+  myInterval = setInterval(function(){
+   document.getElementById('myDiv01').style.left =
+  parseInt(document.getElementById('myDiv01').style.left) + 10
+ } ,200)
+}">
