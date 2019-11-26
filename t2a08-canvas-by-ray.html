@@ -15,7 +15,6 @@ myContext.lineWidth = 10;
 myContext.strokeStyle = 'green';
 myContext.arc(95, 50, 40, 0, 2 * Math.PI);
 myContext.stroke();
-myContext.strokeStyle = 'black';
 }">
 
 <input type=button value=".fillText('Hello World', 400, 100)" onclick="{
@@ -24,6 +23,7 @@ myContext.fillText('Hello World', 400, 100);
 myContext.translate(400, 100);
 myContext.rotate(60 * Math.PI / 180);
 myContext.fillText('Hello World', 10, 10);
+myContext.strokeStyle = 'black';
 myContext.stroke();
 myContext.resetTransform();
 //myContext.rotate(-60 * Math.PI / 180);
